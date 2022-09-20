@@ -168,30 +168,55 @@ adress {
   margin-left: 50px;
 }
 
-.auth-nav .link {
+.auth-nav .icon-mail {
+  display: flex;
+  height: 16px;
   color: var(--secondary-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav .icon-tel {
+  display: flex;
+  height: 16px;
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.icon-mail:hover,
+.icon-mail:focus {
+  color: var(--accent-color);
+}
+
+.icon-tel:hover,
+.icon-tel:focus {
   color: var(--accent-color);
 }
 
 .icon-mail::before {
-  display: inline-flex;
+  display: flex;
   content: "";
-  outline: 1px solid red;
   width: 20px;
-  height: 20px;
+  height: 16px;
   margin-right: 10px;
   background-image: url(../images/heder/envelope.svg);
-  background-position: right bottom;
+  background-position: right center;
   background-repeat: no-repeat;
 }
 
+.icon-tel::before {
+  display: flex;
+  content: "";
+  width: 20px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/heder/envelope.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
 
 /*Hero*/
 .hero {
@@ -202,7 +227,6 @@ adress {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.png);
   background-color: #C4C4C4;
 
@@ -223,7 +247,6 @@ adress {
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
-
 
 .general {
   padding-top: 94px;
@@ -429,18 +452,21 @@ adress {
 
 .button:active {
   background-color: #188CE8;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button.primary:hover,
 .button.primary:focus {
   color: var(--primary-text-color);
   background-color: var(--primary-button-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button.secondary:hover,
 .button.secondary:focus {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter {
@@ -476,10 +502,11 @@ adress {
 
 .project .link {
   display: block;
-  background: #FFFFFF;
+  background: var(--primary-background-color);
 }
 
-.project .link:hover {
+.project .link:hover,
+.project .link:focus {
   border: 1px solid #EEEEEE;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -524,7 +551,7 @@ adress {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .client-card {
@@ -542,12 +569,9 @@ adress {
   justify-content: center;
 }
 
-.client-card .logo:hover {
-  border-color: #2196F3;
-}
-
-.client-card .logo:hover svg {
-  fill: #2196F3;
+.client-card .logo:hover,
+.client-card .logo:focus {
+  border-color: var(--accent-color);
 }
 
 .client-card .logo-svg {
@@ -556,25 +580,10 @@ adress {
   fill: #afb1b8;
 }
 
-/*.item.icon-logo1 {
-    background-image: url(../images/client/logo1.svg);
-    }
-.item.icon-logo2 {
-    background-image: url(../images/client/logo2.svg);
+.client-card .logo:hover svg,
+.client-card .logo:focus svg {
+  fill: var(--accent-color);
 }
-.item.icon-logo3 {
-    background-image: url(../images/client/logo3.svg);
-}
-.item.icon-logo4 {
-    background-image: url(../images/client/Logo4.svg);
-}
-.item.icon-logo5 {
-    background-image: url(../images/client/logo5.svg);
-}
-.item.icon-logo6 {
-    background-image: url(../images/client/logo6.svg);
-}*/
-
 
 /*Footer*/
 .footer {
@@ -611,9 +620,12 @@ adress {
 
 /*Social link*/
 .social-title {
-  color: white;
-  font-style: initial;
+  color: var(--primary-background-color);
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .social {
@@ -622,8 +634,6 @@ adress {
   width: 206px;
   justify-content: space-between;
 }
-
-.social.item {}
 
 .ellips {
   display: flex;
@@ -641,8 +651,14 @@ adress {
   fill: var(--primary-background-color);
 }
 
-.ellips:hover {
+.ellips:hover,
+.ellips:focus {
   background-color: var(--accent-color);
+}
+
+.ellips:hover svg,
+.ellips:focus svg {
+  fill: var(--primary-background-color);
 }
 
 .ellipse {
@@ -661,13 +677,16 @@ adress {
   fill: #AFB1B8;
 }
 
-.ellipse:hover svg {
+.ellipse:hover,
+.ellipse:focus {
+  background-color: var(--accent-color);
+}
+
+.ellipse:hover svg,
+.ellipse:focus svg {
   fill: var(--primary-background-color);
 }
 
-.ellipse:hover {
-  background-color: var(--accent-color);
-}
 
 /*Розмітка сторінки*/
 .container {
