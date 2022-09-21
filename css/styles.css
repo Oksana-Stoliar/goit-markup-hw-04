@@ -92,7 +92,7 @@ adress {
 
 /*Header*/
 .page-header {
- border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -150,7 +150,7 @@ adress {
   align-items: center;
 }
 
-.auth-nav .item + .item {
+.auth-nav .item+.item {
   margin-left: 50px;
 }
 
@@ -210,6 +210,22 @@ adress {
   fill: var(--accent-color);
 }
 
+.mail-svg {
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+  width: 18px;
+  height: 20px;
+  padding: 0;
+}
+
+.tel-svg {
+  margin-right: 10px;
+  width: 18px;
+  height: 20px;
+  padding: 0;
+  fill: var(--secondary-text-color);
+}
+
 /*Hero*/
 .hero {
   height: 600px;
@@ -230,27 +246,15 @@ adress {
   margin-left: auto;
   margin-right: auto;
   width: 696px;
-
   color: var(--text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /*text-align: center;*/
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
-.general {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /*Specifics*/
-.specifics {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .feature {
   display: flex;
   justify-content: center;
@@ -313,7 +317,7 @@ adress {
 
 /*What do we do*/
 .main-box {
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   padding-top: 0;
 }
 
@@ -339,8 +343,6 @@ adress {
 
 /*Our team*/
 .team {
-  margin-top: 0;
-  margin-bottom: 0;
   background-color: var(--background-color);
 }
 
@@ -359,7 +361,6 @@ adress {
 .team-title {
   margin-top: 0;
   margin-bottom: 50px;
-
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -368,9 +369,6 @@ adress {
 }
 
 .team-card .title {
-  margin-top: 30px;
-  margin-bottom: 0px;
-
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -389,14 +387,15 @@ adress {
   text-align: center;
 }
 
+.teamcard-social {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-social {
   display: flex;
-  height: 44px;
-  width: 206px;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
+  gap: 10px;
 }
 
 /*Buttons*/
@@ -500,7 +499,6 @@ adress {
 
 .project .link:hover,
 .project .link:focus {
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -534,7 +532,7 @@ adress {
 
 /*Client*/
 .client {
-  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .client-title {
@@ -683,6 +681,7 @@ adress {
 
 /*Розмітка сторінки*/
 .container {
+  padding-top: 94px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
