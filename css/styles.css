@@ -92,6 +92,7 @@ adress {
 
 /*Header*/
 .page-header {
+  /*background-color: #ccc;*/
   border-bottom: 1px solid #ececec;
 }
 
@@ -116,9 +117,21 @@ adress {
   margin-right: 50px;
 }
 
+/*Очистити правий margin*/
+/*Примінити тільки для останнього*/
 .site-nav .item:last-child {
   margin-right: 0px;
 }
+
+/*Не приміняти до останнього елемента списку 
+    .site-nav .item:not(:last-child) {
+        margin-right: 50px;
+    }
+     Примінити до всіх крім першого
+    .site-nav .item + .item {
+        margin-left: 50px;
+    }
+    */
 
 .site-nav .link {
   display: block;
@@ -155,7 +168,7 @@ adress {
   margin-left: 50px;
 }
 
-.auth-nav .icon-mail {
+.auth-nav .mail {
   display: flex;
   height: 16px;
   color: var(--secondary-text-color);
@@ -164,7 +177,36 @@ adress {
   letter-spacing: 0.02em;
 }
 
-.auth-nav .icon-tel {
+.mail:hover,
+.mail:focus {
+  color: var(--accent-color);
+}
+
+.mail:hover svg,
+.mail:focus svg {
+  fill: var(--accent-color);
+}
+
+.mail {
+  display: flex;
+}
+
+.mail-svg {
+  height: 12px;
+  width: 16px;
+  fill: var(--secondary-text-color);
+}
+
+.mail:hover svg,
+.mail:focus svg {
+  fill: var(--accent-color);
+}
+
+.mail {
+  display: flex;
+}
+
+.auth-nav .tel {
   display: flex;
   height: 16px;
   color: var(--secondary-text-color);
@@ -173,36 +215,20 @@ adress {
   letter-spacing: 0.02em;
 }
 
-.icon-mail:hover,
-.icon-mail:focus {
+.tel-svg {
+  height: 16px;
+  width: 10px;
+  fill: var(--secondary-text-color);
+}
+
+.tel:hover,
+.tel:focus {
   color: var(--accent-color);
 }
 
-.icon-tel:hover,
-.icon-tel:focus {
-  color: var(--accent-color);
-}
-
-.icon-mail::before {
-  display: flex;
-  content: '';
-  width: 20px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../images/heder/envelope.svg);
-  background-position: right center;
-  background-repeat: no-repeat;
-}
-
-.icon-tel::before {
-  display: flex;
-  content: '';
-  width: 20px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../images/heder/smartphone.svg);
-  background-position: right center;
-  background-repeat: no-repeat;
+.tel:hover svg,
+.tel:focus svg {
+  fill: var(--accent-color);
 }
 
 /*Hero*/
@@ -491,7 +517,7 @@ adress {
 
 .project .link {
   display: block;
-  background: var(--primary-background-color);
+  background: #ffffff;
 }
 
 .project .link:hover,
@@ -541,7 +567,7 @@ adress {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 .client-card {
@@ -561,7 +587,7 @@ adress {
 
 .client-card .logo:hover,
 .client-card .logo:focus {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .client-card .logo-svg {
@@ -572,7 +598,7 @@ adress {
 
 .client-card .logo:hover svg,
 .client-card .logo:focus svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 /*Footer*/
