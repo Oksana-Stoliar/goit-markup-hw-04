@@ -92,8 +92,7 @@ adress {
 
 /*Header*/
 .page-header {
-  /*background-color: #ccc;*/
-  border-bottom: 1px solid #ececec;
+ border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -117,27 +116,14 @@ adress {
   margin-right: 50px;
 }
 
-/*Очистити правий margin*/
-/*Примінити тільки для останнього*/
 .site-nav .item:last-child {
   margin-right: 0px;
 }
-
-/*Не приміняти до останнього елемента списку 
-    .site-nav .item:not(:last-child) {
-        margin-right: 50px;
-    }
-     Примінити до всіх крім першого
-    .site-nav .item + .item {
-        margin-left: 50px;
-    }
-    */
 
 .site-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  /*outline: 1px solid tomato;*/
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -149,7 +135,6 @@ adress {
   color: var(--accent-color);
 }
 
-/*составной селектор- фиксатор цвета ссылки*/
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -162,6 +147,7 @@ adress {
   padding-top: 32px;
   padding-bottom: 32px;
   margin-left: auto;
+  align-items: center;
 }
 
 .auth-nav .item + .item {
@@ -175,6 +161,7 @@ adress {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
 }
 
 .mail:hover,
@@ -192,9 +179,11 @@ adress {
 }
 
 .mail-svg {
-  height: 12px;
-  width: 16px;
   fill: var(--secondary-text-color);
+  margin-right: 10px;
+  width: 18px;
+  height: 20px;
+  padding: 0;
 }
 
 .mail:hover svg,
@@ -203,7 +192,8 @@ adress {
 }
 
 .mail {
-  display: flex;
+  display: inline-flex;
+  margin-right: 10px;
 }
 
 .auth-nav .tel {
@@ -213,11 +203,14 @@ adress {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
 }
 
 .tel-svg {
-  height: 16px;
-  width: 10px;
+  margin-right: 10px;
+  width: 18px;
+  height: 20px;
+  padding: 0;
   fill: var(--secondary-text-color);
 }
 
@@ -420,7 +413,6 @@ adress {
   margin-right: auto;
 }
 
-/*Кнопки nav для Portfolio*/
 /*Buttons*/
 .button {
   color: var(--primary-background-color);
