@@ -164,38 +164,6 @@ adress {
   align-items: center;
 }
 
-.mail:hover,
-.mail:focus {
-  color: var(--accent-color);
-}
-
-.mail:hover svg,
-.mail:focus svg {
-  fill: var(--accent-color);
-}
-
-.mail {
-  display: flex;
-}
-
-.mail-svg {
-  fill: var(--secondary-text-color);
-  margin-right: 10px;
-  width: 18px;
-  height: 20px;
-  padding: 0;
-}
-
-.mail:hover svg,
-.mail:focus svg {
-  fill: var(--accent-color);
-}
-
-.mail {
-  display: inline-flex;
-  margin-right: 10px;
-}
-
 .auth-nav .tel {
   display: flex;
   height: 16px;
@@ -206,12 +174,30 @@ adress {
   align-items: center;
 }
 
+.mail-svg {
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+  width: 18px;
+  height: 20px;
+  padding: 0;
+}
+
 .tel-svg {
   margin-right: 10px;
   width: 18px;
   height: 20px;
   padding: 0;
   fill: var(--secondary-text-color);
+}
+
+.mail:hover,
+.mail:focus {
+  color: var(--accent-color);
+}
+
+.mail:hover svg,
+.mail:focus svg {
+  fill: var(--accent-color);
 }
 
 .tel:hover,
