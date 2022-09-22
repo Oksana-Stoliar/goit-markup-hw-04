@@ -93,6 +93,11 @@ adress {
 /*Header*/
 .page-header {
   border-bottom: 1px solid #ececec;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
 }
 
 .header-nav {
@@ -150,7 +155,7 @@ adress {
   align-items: center;
 }
 
-.auth-nav .item+.item {
+.auth-nav .item + .item {
   margin-left: 50px;
 }
 
@@ -162,6 +167,8 @@ adress {
   line-height: 1.14;
   letter-spacing: 0.02em;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .auth-nav .tel {
@@ -172,6 +179,8 @@ adress {
   line-height: 1.14;
   letter-spacing: 0.02em;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .mail-svg {
@@ -477,7 +486,7 @@ adress {
 
 /*Portfolio*/
 .portfolio {
-  padding-top: 94px;
+  /* padding-top: 94px; */
   padding-bottom: 94px;
 }
 
@@ -494,7 +503,6 @@ adress {
 
 .project .link {
   display: block;
-  background: #ffffff;
 }
 
 .project .link:hover,
@@ -582,6 +590,7 @@ adress {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
+  
 }
 
 .contact {
@@ -682,6 +691,14 @@ adress {
 /*Розмітка сторінки*/
 .container {
   padding-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.container-hf {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
